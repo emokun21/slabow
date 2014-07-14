@@ -3,7 +3,7 @@ module.exports = (robot) ->
     msg.send "ガッ"
   robot.hear /hoge/ , (msg) ->
     msg.send "フガッ"
-  robot.hear /@slabow/
+  robot.hear /@slabow/, (msg) ->
     msg.send msg.random [
       "ひぎぃいいいい",
       "はべぇええええ",
