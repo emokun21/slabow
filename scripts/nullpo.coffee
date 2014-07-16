@@ -12,3 +12,5 @@ module.exports = (robot) ->
       "ぐべぇええええ",
       "あ、すみません"
       ]
+  robot.respond /whoami/, (msg) ->
+    msg.send "#{msg.message.user.name}"
