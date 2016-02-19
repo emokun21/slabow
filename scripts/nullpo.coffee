@@ -14,3 +14,15 @@ module.exports = (robot) ->
       ]
   robot.respond /whoami/, (msg) ->
     msg.send "#{msg.message.user.name}"
+  robot.respond /lunch/, (msg) ->
+    msg.send msg.random [
+      "カレー",
+      "焼肉",
+      "寿司",
+      "大戸屋",
+      "ハンバーガー",
+      "牛丼",
+      "ラーメン",
+      "パン",
+      "コンビニ"
+      ]
